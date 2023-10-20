@@ -20,8 +20,8 @@ export default class EmpleadosOficios extends Component {
   buscarEmpleados = (e) => {
     e.preventDefault();
 
-    var idDepartamento = this.selectDepartamento.current.value;
-    var request = "api/empleados/empleadosdepartamento/" + idDepartamento;
+    var oficio = this.selectOficio.current.value;
+    var request = "api/empleados/empleadosoficio/" + oficio;
 
     var url = Global.urlApiEmpleados + request;
 
@@ -34,6 +34,7 @@ export default class EmpleadosOficios extends Component {
   };
 
   loadOficios = () => {
+    
     var request = "api/empleados/oficios";
     var url = Global.urlApiEmpleados + request;
 

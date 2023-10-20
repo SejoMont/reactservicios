@@ -8,6 +8,7 @@ import BuscadorCustomer from './components/BuscadorCustomer';
 import CochesMarca from './components/CochesMarca';
 import DepartamentosEmpleados from './components/DepartamentosEmpleados';
 import EmpleadosOficios from './components/EmpleadosOficios';
+import Departamentos from './components/MaestroDetalle/Departamentos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +18,8 @@ root.render(
     {/* <BuscadorCustomer/> */}
     {/* <CochesMarca/> */}
     {/* <DepartamentosEmpleados/> */}
-    <EmpleadosOficios/>
+    {/* <EmpleadosOficios/> */}
+    <Departamentos/>
 
   </React.StrictMode>
 );
