@@ -9,6 +9,11 @@ import CochesMarca from './components/CochesMarca';
 import DepartamentosEmpleados from './components/DepartamentosEmpleados';
 import EmpleadosOficios from './components/EmpleadosOficios';
 import Departamentos from './components/MaestroDetalle/Departamentos';
+import TablaMultiplicar from './components/TablaMultiplicar/TablaMultiplicar';
+import Home from './components/rutasParametros/Home';
+import NotFound from './components/rutasParametros/NotFound';
+import Router from './components/Router';
+import MenuRutas from './components/MenuRutas';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +24,13 @@ root.render(
     {/* <CochesMarca/> */}
     {/* <DepartamentosEmpleados/> */}
     {/* <EmpleadosOficios/> */}
-    <Departamentos/>
+    {/* <Departamentos/> */}
+    {/* <TablaMultiplicar numero="9"/> */}
+    {/* <Home/>
+    <NotFound/> */}
+    <MenuRutas/>
+    <Router/>
+    
 
   </React.StrictMode>
 );
