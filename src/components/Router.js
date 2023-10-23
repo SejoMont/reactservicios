@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import TablaMultiplicar from "./TablaMultiplicar/TablaMultiplicar";
 import Home from "./rutasParametros/Home";
 import NotFound from "./rutasParametros/NotFound";
+import Collatz from "./Collatz";
+import MenuRutas from "./MenuRutas";
 
 export default class Router extends Component {
   render() {
@@ -16,10 +18,19 @@ export default class Router extends Component {
       return <TablaMultiplicar numero={minumero} />;
     }
 
+    function CollatzElement() {
+      var { numero } = useParams();
+
+      return <Collatz numero={numero}/>
+    }
+
     return (
       <BrowserRouter>
+      {/* Aqui incluiremos los dibujos estaticos para el menu de rutas */}
+        <MenuRutas/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/collatz/:numero" element={<CollatzElement/>} />
           <Route
             path="/tabla/:minumero"
             element={<TablaMultiplicarElement />}

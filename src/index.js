@@ -1,21 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import ServicioCustomer from './components/ServicioCustomer';
-import BuscadorCustomer from './components/BuscadorCustomer';
-import CochesMarca from './components/CochesMarca';
-import DepartamentosEmpleados from './components/DepartamentosEmpleados';
-import EmpleadosOficios from './components/EmpleadosOficios';
-import Departamentos from './components/MaestroDetalle/Departamentos';
-import TablaMultiplicar from './components/TablaMultiplicar/TablaMultiplicar';
-import Home from './components/rutasParametros/Home';
-import NotFound from './components/rutasParametros/NotFound';
-import Router from './components/Router';
-import MenuRutas from './components/MenuRutas';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import ServicioCustomer from "./components/ServicioCustomer";
+import BuscadorCustomer from "./components/BuscadorCustomer";
+import CochesMarca from "./components/CochesMarca";
+import DepartamentosEmpleados from "./components/DepartamentosEmpleados";
+import EmpleadosOficios from "./components/EmpleadosOficios";
+import Departamentos from "./components/MaestroDetalle/Departamentos";
+import TablaMultiplicar from "./components/TablaMultiplicar/TablaMultiplicar";
+import Home from "./components/rutasParametros/Home";
+import NotFound from "./components/rutasParametros/NotFound";
+import Router from "./components/Router";
+import MenuRutas from "./components/MenuRutas";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "bootstrap/dist/css/bootstrap.min.css"
+import $ from "jquery"
+import Popper from "popper.js";
+import "bootstrap/dist/js/bootstrap.bundle"
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
@@ -28,10 +33,8 @@ root.render(
     {/* <TablaMultiplicar numero="9"/> */}
     {/* <Home/>
     <NotFound/> */}
-    <MenuRutas/>
-    <Router/>
-    
-
+    {/* <MenuRutas/> */}
+    <Router />
   </React.StrictMode>
 );
 
